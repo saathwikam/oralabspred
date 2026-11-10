@@ -37,7 +37,12 @@ def load_saved_model(model_dir: str | Path, device: str | torch.device = "cpu"):
         config = json.load(stream)
     encoder = AutoModel.from_pretrained(model_dir / "encoder")
     model = ChemBERTaMultiTaskClassifier(encoder, dropout=float(config["dropout"]))
-    state = torch.load(model_dir / "model_state_dict.pt", map_location=device, weights_only=True)
+    state = torch.load(
+        model_dir / "model_state_dict.pt",
+        map_location=device,
+        weights_only=True,
+        mmap=True,
+    )
     model.load_state_dict(state)
     model.to(device).eval()
     tokenizer = AutoTokenizer.from_pretrained(model_dir / "tokenizer")

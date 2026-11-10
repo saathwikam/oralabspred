@@ -1,0 +1,47 @@
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+**/kaggle.json
+**/*credentials*
+**/*secret*
+*.pem
+*.key
+
+# Training outputs and resumable checkpoints
+**/last_checkpoint.pt
+**/checkpoint*.pt
+**/*.ckpt
+checkpoints/
+**/checkpoints/
+outputs/
+**/outputs/
+AI_Based_Oral_Absorption_Prediction_System_Kaggle_Bundle/
+
+# P1 data is retained locally but is not needed to serve inference
+data/processed/
+
+# Temporary and editor files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

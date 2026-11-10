@@ -31,14 +31,11 @@ def consistency_warning(predictions: dict[str, dict[str, Any]]) -> str | None:
 def default_model_dir() -> Path:
     configured = os.environ.get(MODEL_ENV_VAR)
     if configured:
-        return Path(configured).expanduser().resolve()
-    return (
-        PROJECT_ROOT.parent
-        / f"{PROJECT_ROOT.name}_Kaggle_Bundle"
-        / "outputs"
-        / PROJECT_ROOT.name
-        / "best_model"
-    )
+        configured_path = Path(configured).expanduser()
+        if not configured_path.is_absolute():
+            configured_path = PROJECT_ROOT / configured_path
+        return configured_path.resolve()
+    return (PROJECT_ROOT / "best_model").resolve()
 
 
 class MolecularAbsorptionPredictor:
@@ -52,7 +49,10 @@ class MolecularAbsorptionPredictor:
         self.model_dir = Path(model_dir).expanduser().resolve() if model_dir else default_model_dir()
         if not self.model_dir.is_dir():
             raise FileNotFoundError(f"Trained model directory does not exist: {self.model_dir}")
-        self.device = torch.device(device or ("cuda" if torch.cuda.is_available() else "cpu"))
+        requested_device = torch.device(device or "cpu")
+        if requested_device.type != "cpu":
+            raise ValueError("This deployment is configured for CPU-only inference.")
+        self.device = requested_device
         self.model, self.tokenizer, self.config = load_saved_model(self.model_dir, device=self.device)
         if tuple(self.config.get("endpoints", ())) != ENDPOINTS:
             raise ValueError(
