@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="380" viewBox="0 0 1080 380">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#25374b}.title{font-size:19px;font-weight:bold}.label{font-size:13px}.cell{font-size:17px;font-weight:bold}</style>
+<text x="26" y="30" class="title">Frozen test set: confusion matrices at threshold 0.5</text>
+<text x="138" y="64" class="title">HIA</text>
+<text x="28" y="126" class="label">Actual 0</text>
+<text x="28" y="214" class="label">Actual 1</text>
+<rect x="120" y="84" width="88" height="88" fill="#c6d3df" stroke="white" stroke-width="2"/>
+<text x="164.0" y="122" text-anchor="middle" class="cell">36</text>
+<text x="164.0" y="144" text-anchor="middle" class="label">TN</text>
+<rect x="208" y="84" width="88" height="88" fill="#f1f4f7" stroke="white" stroke-width="2"/>
+<text x="252.0" y="122" text-anchor="middle" class="cell">4</text>
+<text x="252.0" y="144" text-anchor="middle" class="label">FP</text>
+<rect x="120" y="172" width="88" height="88" fill="#d6dfe8" stroke="white" stroke-width="2"/>
+<text x="164.0" y="210" text-anchor="middle" class="cell">24</text>
+<text x="164.0" y="232" text-anchor="middle" class="label">FN</text>
+<rect x="208" y="172" width="88" height="88" fill="#5e82a5" stroke="white" stroke-width="2"/>
+<text x="252.0" y="210" text-anchor="middle" class="cell">114</text>
+<text x="252.0" y="232" text-anchor="middle" class="label">TP</text>
+<text x="123" y="289" class="label">Predicted 0                 Predicted 1</text>
+<text x="28" y="322" class="label">Observed n=178; sensitivity=0.826; specificity=0.900</text>
+<text x="493" y="64" class="title">HOB20</text>
+<text x="383" y="126" class="label">Actual 0</text>
+<text x="383" y="214" class="label">Actual 1</text>
+<rect x="475" y="84" width="88" height="88" fill="#c9d5e1" stroke="white" stroke-width="2"/>
+<text x="519.0" y="122" text-anchor="middle" class="cell">31</text>
+<text x="519.0" y="144" text-anchor="middle" class="label">TN</text>
+<rect x="563" y="84" width="88" height="88" fill="#d1dce6" stroke="white" stroke-width="2"/>
+<text x="607.0" y="122" text-anchor="middle" class="cell">25</text>
+<text x="607.0" y="144" text-anchor="middle" class="label">FP</text>
+<rect x="475" y="172" width="88" height="88" fill="#adbfd1" stroke="white" stroke-width="2"/>
+<text x="519.0" y="210" text-anchor="middle" class="cell">50</text>
+<text x="519.0" y="232" text-anchor="middle" class="label">FN</text>
+<rect x="563" y="172" width="88" height="88" fill="#5e82a5" stroke="white" stroke-width="2"/>
+<text x="607.0" y="210" text-anchor="middle" class="cell">104</text>
+<text x="607.0" y="232" text-anchor="middle" class="label">TP</text>
+<text x="478" y="289" class="label">Predicted 0                 Predicted 1</text>
+<text x="383" y="322" class="label">Observed n=210; sensitivity=0.675; specificity=0.554</text>
+<text x="848" y="64" class="title">HOB50</text>
+<text x="738" y="126" class="label">Actual 0</text>
+<text x="738" y="214" class="label">Actual 1</text>
+<rect x="830" y="84" width="88" height="88" fill="#7090af" stroke="white" stroke-width="2"/>
+<text x="874.0" y="122" text-anchor="middle" class="cell">66</text>
+<text x="874.0" y="144" text-anchor="middle" class="label">TN</text>
+<rect x="918" y="84" width="88" height="88" fill="#b1c3d3" stroke="white" stroke-width="2"/>
+<text x="962.0" y="122" text-anchor="middle" class="cell">34</text>
+<text x="962.0" y="144" text-anchor="middle" class="label">FP</text>
+<rect x="830" y="172" width="88" height="88" fill="#a9bccf" stroke="white" stroke-width="2"/>
+<text x="874.0" y="210" text-anchor="middle" class="cell">38</text>
+<text x="874.0" y="232" text-anchor="middle" class="label">FN</text>
+<rect x="918" y="172" width="88" height="88" fill="#5e82a5" stroke="white" stroke-width="2"/>
+<text x="962.0" y="210" text-anchor="middle" class="cell">75</text>
+<text x="962.0" y="232" text-anchor="middle" class="label">TP</text>
+<text x="833" y="289" class="label">Predicted 0                 Predicted 1</text>
+<text x="738" y="322" class="label">Observed n=213; sensitivity=0.664; specificity=0.660</text>
+</svg>

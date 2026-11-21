@@ -1,0 +1,26 @@
+{
+  "validation": {
+    "rows": 344,
+    "observed_label_hierarchy_violations": 0,
+    "v1": {
+      "probability_HOB50_gt_HOB20": 103,
+      "binary_HOB50_positive_HOB20_negative_at_0_5": 1
+    },
+    "v2": {
+      "probability_HOB50_gt_HOB20": 128,
+      "binary_HOB50_positive_HOB20_negative_at_0_5": 0
+    }
+  },
+  "test": {
+    "rows": 344,
+    "observed_label_hierarchy_violations": 0,
+    "v1": {
+      "probability_HOB50_gt_HOB20": 79,
+      "binary_HOB50_positive_HOB20_negative_at_0_5": 3
+    },
+    "v2": {
+      "probability_HOB50_gt_HOB20": 88,
+      "binary_HOB50_positive_HOB20_negative_at_0_5": 0
+    }
+  }
+}

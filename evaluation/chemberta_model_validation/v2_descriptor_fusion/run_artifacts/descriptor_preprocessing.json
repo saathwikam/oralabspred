@@ -1,0 +1,40 @@
+{
+  "descriptor_names": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors",
+    "NumRotatableBonds"
+  ],
+  "imputation": "median",
+  "imputer_statistics": [
+    328.481,
+    2.3334,
+    74.6,
+    2.0,
+    4.0,
+    4.0
+  ],
+  "scaling": "StandardScaler",
+  "scaler_mean": [
+    352.9970993129295,
+    2.26375534665834,
+    85.16010618363524,
+    2.154903185509057,
+    4.841349156777015,
+    5.018738288569644
+  ],
+  "scaler_scale": [
+    148.29216651633004,
+    2.3494095456533115,
+    58.9345774655089,
+    2.190431752351013,
+    3.101218020050094,
+    3.4883081104839744
+  ],
+  "fit_split": "train",
+  "n_training_rows_fit": 1601,
+  "fit_dataset_sha256": "9ef4679f515083552b9b4c22bd9b8906e0c6b8e1c98ebba212e42937f2204849",
+  "fit_manifest_sha256": "0323b5c44609b0a1501f5dec2191380744e9b03a2f56738715b099dd1d3d1a5c"
+}

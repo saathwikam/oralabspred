@@ -1,0 +1,72 @@
+{
+  "molecules": 2289,
+  "manifest_rows": 2289,
+  "split_counts": {
+    "train": 1601,
+    "test": 344,
+    "validation": 344
+  },
+  "unique_inchikeys": 2289,
+  "duplicate_inchikey_rows": 0,
+  "canonical_smiles_match_manifest": true,
+  "key_cross_split_assignments": 0,
+  "scaffold_groups": 1215,
+  "scaffold_groups_crossing_splits": 0,
+  "leaking_scaffold_ids": [],
+  "scaffold_types": {
+    "Bemis-Murcko": 2224,
+    "Acyclic molecule-specific fallback": 65
+  },
+  "split_stats": [
+    {
+      "split": "train",
+      "molecules": 1601,
+      "fraction": 0.6994320664045435,
+      "unique_scaffolds": 849,
+      "HIA_positive": 693,
+      "HIA_negative": 114,
+      "HIA_missing": 794,
+      "HOB20_positive": 823,
+      "HOB20_negative": 244,
+      "HOB20_missing": 534,
+      "HOB50_positive": 602,
+      "HOB50_negative": 487,
+      "HOB50_missing": 512
+    },
+    {
+      "split": "validation",
+      "molecules": 344,
+      "fraction": 0.15028396679772826,
+      "unique_scaffolds": 183,
+      "HIA_positive": 160,
+      "HIA_negative": 14,
+      "HIA_missing": 170,
+      "HOB20_positive": 174,
+      "HOB20_negative": 58,
+      "HOB20_missing": 112,
+      "HOB50_positive": 126,
+      "HOB50_negative": 110,
+      "HOB50_missing": 108
+    },
+    {
+      "split": "test",
+      "molecules": 344,
+      "fraction": 0.15028396679772826,
+      "unique_scaffolds": 183,
+      "HIA_positive": 138,
+      "HIA_negative": 40,
+      "HIA_missing": 166,
+      "HOB20_positive": 154,
+      "HOB20_negative": 56,
+      "HOB20_missing": 134,
+      "HOB50_positive": 113,
+      "HOB50_negative": 100,
+      "HOB50_missing": 131
+    }
+  ],
+  "training_only_pos_weights": {
+    "HIA": 0.1645021645021645,
+    "HOB20": 0.2964763061968408,
+    "HOB50": 0.8089700996677741
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "input_rows": 2289,
+  "descriptor_rows": 2289,
+  "failed_calculations": 0,
+  "rows_retained": 2289,
+  "handling": "Failed descriptor vectors retained as NaN and median-imputed from train only",
+  "descriptor_names": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors",
+    "NumRotatableBonds"
+  ]
+}

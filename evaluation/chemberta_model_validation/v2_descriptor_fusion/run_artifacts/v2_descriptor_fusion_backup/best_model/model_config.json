@@ -1,0 +1,22 @@
+{
+  "architecture": "chemberta_descriptor_late_fusion",
+  "endpoints": [
+    "HIA",
+    "HOB20",
+    "HOB50"
+  ],
+  "descriptor_names": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors",
+    "NumRotatableBonds"
+  ],
+  "descriptor_hidden_size": 32,
+  "dropout": 0.1,
+  "max_length": 256,
+  "decision_threshold": 0.5,
+  "best_epoch": 4,
+  "best_validation_loss": 0.35172757506370544
+}

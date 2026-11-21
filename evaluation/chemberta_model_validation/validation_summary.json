@@ -1,0 +1,368 @@
+{
+  "split_audit": {
+    "molecules": 2289,
+    "manifest_rows": 2289,
+    "split_counts": {
+      "train": 1601,
+      "test": 344,
+      "validation": 344
+    },
+    "unique_inchikeys": 2289,
+    "duplicate_inchikey_rows": 0,
+    "canonical_smiles_match_manifest": true,
+    "key_cross_split_assignments": 0,
+    "scaffold_groups": 1215,
+    "scaffold_groups_crossing_splits": 0,
+    "leaking_scaffold_ids": [],
+    "scaffold_types": {
+      "Bemis-Murcko": 2224,
+      "Acyclic molecule-specific fallback": 65
+    },
+    "split_stats": [
+      {
+        "split": "train",
+        "molecules": 1601,
+        "fraction": 0.6994320664045435,
+        "unique_scaffolds": 849,
+        "HIA_positive": 693,
+        "HIA_negative": 114,
+        "HIA_missing": 794,
+        "HOB20_positive": 823,
+        "HOB20_negative": 244,
+        "HOB20_missing": 534,
+        "HOB50_positive": 602,
+        "HOB50_negative": 487,
+        "HOB50_missing": 512
+      },
+      {
+        "split": "validation",
+        "molecules": 344,
+        "fraction": 0.15028396679772826,
+        "unique_scaffolds": 183,
+        "HIA_positive": 160,
+        "HIA_negative": 14,
+        "HIA_missing": 170,
+        "HOB20_positive": 174,
+        "HOB20_negative": 58,
+        "HOB20_missing": 112,
+        "HOB50_positive": 126,
+        "HOB50_negative": 110,
+        "HOB50_missing": 108
+      },
+      {
+        "split": "test",
+        "molecules": 344,
+        "fraction": 0.15028396679772826,
+        "unique_scaffolds": 183,
+        "HIA_positive": 138,
+        "HIA_negative": 40,
+        "HIA_missing": 166,
+        "HOB20_positive": 154,
+        "HOB20_negative": 56,
+        "HOB20_missing": 134,
+        "HOB50_positive": 113,
+        "HOB50_negative": 100,
+        "HOB50_missing": 131
+      }
+    ],
+    "training_only_pos_weights": {
+      "HIA": 0.1645021645021645,
+      "HOB20": 0.2964763061968408,
+      "HOB50": 0.8089700996677741
+    }
+  },
+  "metrics": [
+    {
+      "endpoint": "HIA",
+      "n_observed": 174,
+      "positive": 160,
+      "negative": 14,
+      "missing": 170,
+      "threshold": 0.5,
+      "true_negative": 3,
+      "false_positive": 11,
+      "false_negative": 16,
+      "true_positive": 144,
+      "sensitivity_recall": 0.9,
+      "specificity": 0.21428571428571427,
+      "precision": 0.9290322580645162,
+      "f1": 0.9142857142857143,
+      "accuracy": 0.8448275862068966,
+      "roc_auc": 0.6276785714285714,
+      "pr_auc_average_precision": 0.9491064007617792,
+      "confusion_matrix_labels_0_1": [
+        [
+          3,
+          11
+        ],
+        [
+          16,
+          144
+        ]
+      ],
+      "class_support_sufficient_for_roc_auc": true,
+      "split": "validation"
+    },
+    {
+      "endpoint": "HOB20",
+      "n_observed": 232,
+      "positive": 174,
+      "negative": 58,
+      "missing": 112,
+      "threshold": 0.5,
+      "true_negative": 20,
+      "false_positive": 38,
+      "false_negative": 31,
+      "true_positive": 143,
+      "sensitivity_recall": 0.8218390804597702,
+      "specificity": 0.3448275862068966,
+      "precision": 0.7900552486187845,
+      "f1": 0.8056338028169014,
+      "accuracy": 0.7025862068965517,
+      "roc_auc": 0.6039437177962742,
+      "pr_auc_average_precision": 0.7941879931601339,
+      "confusion_matrix_labels_0_1": [
+        [
+          20,
+          38
+        ],
+        [
+          31,
+          143
+        ]
+      ],
+      "class_support_sufficient_for_roc_auc": true,
+      "split": "validation"
+    },
+    {
+      "endpoint": "HOB50",
+      "n_observed": 236,
+      "positive": 126,
+      "negative": 110,
+      "missing": 108,
+      "threshold": 0.5,
+      "true_negative": 50,
+      "false_positive": 60,
+      "false_negative": 27,
+      "true_positive": 99,
+      "sensitivity_recall": 0.7857142857142857,
+      "specificity": 0.45454545454545453,
+      "precision": 0.6226415094339622,
+      "f1": 0.6947368421052632,
+      "accuracy": 0.6313559322033898,
+      "roc_auc": 0.6868686868686869,
+      "pr_auc_average_precision": 0.6998771412432567,
+      "confusion_matrix_labels_0_1": [
+        [
+          50,
+          60
+        ],
+        [
+          27,
+          99
+        ]
+      ],
+      "class_support_sufficient_for_roc_auc": true,
+      "split": "validation"
+    },
+    {
+      "endpoint": "HIA",
+      "n_observed": 178,
+      "positive": 138,
+      "negative": 40,
+      "missing": 166,
+      "threshold": 0.5,
+      "true_negative": 36,
+      "false_positive": 4,
+      "false_negative": 24,
+      "true_positive": 114,
+      "sensitivity_recall": 0.8260869565217391,
+      "specificity": 0.9,
+      "precision": 0.9661016949152542,
+      "f1": 0.890625,
+      "accuracy": 0.8426966292134831,
+      "roc_auc": 0.93768115942029,
+      "pr_auc_average_precision": 0.9774737815826299,
+      "confusion_matrix_labels_0_1": [
+        [
+          36,
+          4
+        ],
+        [
+          24,
+          114
+        ]
+      ],
+      "class_support_sufficient_for_roc_auc": true,
+      "split": "test"
+    },
+    {
+      "endpoint": "HOB20",
+      "n_observed": 210,
+      "positive": 154,
+      "negative": 56,
+      "missing": 134,
+      "threshold": 0.5,
+      "true_negative": 31,
+      "false_positive": 25,
+      "false_negative": 50,
+      "true_positive": 104,
+      "sensitivity_recall": 0.6753246753246753,
+      "specificity": 0.5535714285714286,
+      "precision": 0.8062015503875969,
+      "f1": 0.734982332155477,
+      "accuracy": 0.6428571428571429,
+      "roc_auc": 0.6847170686456402,
+      "pr_auc_average_precision": 0.8340394812947792,
+      "confusion_matrix_labels_0_1": [
+        [
+          31,
+          25
+        ],
+        [
+          50,
+          104
+        ]
+      ],
+      "class_support_sufficient_for_roc_auc": true,
+      "split": "test"
+    },
+    {
+      "endpoint": "HOB50",
+      "n_observed": 213,
+      "positive": 113,
+      "negative": 100,
+      "missing": 131,
+      "threshold": 0.5,
+      "true_negative": 66,
+      "false_positive": 34,
+      "false_negative": 38,
+      "true_positive": 75,
+      "sensitivity_recall": 0.6637168141592921,
+      "specificity": 0.66,
+      "precision": 0.6880733944954128,
+      "f1": 0.6756756756756757,
+      "accuracy": 0.6619718309859155,
+      "roc_auc": 0.6873451327433628,
+      "pr_auc_average_precision": 0.7034391937608061,
+      "confusion_matrix_labels_0_1": [
+        [
+          66,
+          34
+        ],
+        [
+          38,
+          75
+        ]
+      ],
+      "class_support_sufficient_for_roc_auc": true,
+      "split": "test"
+    }
+  ],
+  "saved_metric_comparison": {
+    "validation_HIA": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.00044642857142862535,
+      "confusion_matrix_matches": true,
+      "max_absolute_metric_difference": 0.00044642857142862535
+    },
+    "validation_HOB20": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 1.1102230246251565e-16,
+      "confusion_matrix_matches": true,
+      "max_absolute_metric_difference": 1.1102230246251565e-16
+    },
+    "validation_HOB50": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.00014430014430000249,
+      "confusion_matrix_matches": true,
+      "max_absolute_metric_difference": 0.00014430014430000249
+    },
+    "test_HIA": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 1.1102230246251565e-16,
+      "confusion_matrix_matches": true,
+      "max_absolute_metric_difference": 1.1102230246251565e-16
+    },
+    "test_HOB20": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.00011595547309850573,
+      "confusion_matrix_matches": true,
+      "max_absolute_metric_difference": 0.00011595547309850573
+    },
+    "test_HOB50": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 1.1102230246251565e-16,
+      "confusion_matrix_matches": true,
+      "max_absolute_metric_difference": 1.1102230246251565e-16
+    }
+  },
+  "nested_threshold_consistency": {
+    "interpretation": "Conditional nesting check: if both labels mark the same oral-bioavailability quantity at 20% and 50% cutoffs, HOB50 positive with HOB20 negative is inconsistent.",
+    "test_rows": 344,
+    "test_binary_prediction_violations": 3,
+    "test_probability_order_violations_HOB50_gt_HOB20": 79,
+    "test_rows_with_both_observed_labels": 210,
+    "test_observed_label_violations": 0,
+    "full_data_rows_with_both_observed_labels": 1509,
+    "full_data_observed_label_violations": 0,
+    "test_prediction_violation_rows": [
+      {
+        "InChIKey": "AVKUERGKIZMTKX-NJBDSQKTSA-N",
+        "Canonical_SMILES": "CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccccc3)C(=O)N2[C@H]1C(=O)O",
+        "HOB20_probability": 0.4731251895427704,
+        "HOB20_prediction": 0,
+        "HOB50_probability": 0.507572591304779,
+        "HOB50_prediction": 1
+      },
+      {
+        "InChIKey": "AVKUERGKIZMTKX-OXIWPEFWSA-N",
+        "Canonical_SMILES": "CC1(C)S[C@H]2[C@H](NC(=O)[C@@H](N)c3ccccc3)C(=O)N2[C@@H]1C(=O)O",
+        "HOB20_probability": 0.4731251895427704,
+        "HOB20_prediction": 0,
+        "HOB50_probability": 0.507572591304779,
+        "HOB50_prediction": 1
+      },
+      {
+        "InChIKey": "YLJREFDVOIBQDA-UHFFFAOYSA-N",
+        "Canonical_SMILES": "N=c1c2c([nH]c3ccccc13)CCCC2",
+        "HOB20_probability": 0.4994474947452545,
+        "HOB20_prediction": 0,
+        "HOB50_probability": 0.5015698075294495,
+        "HOB50_prediction": 1
+      }
+    ]
+  },
+  "test_error_counts": {
+    "HIA": {
+      "false_positives": 4,
+      "false_negatives": 24
+    },
+    "HOB20": {
+      "false_positives": 25,
+      "false_negatives": 50
+    },
+    "HOB50": {
+      "false_positives": 34,
+      "false_negatives": 38
+    }
+  }
+}

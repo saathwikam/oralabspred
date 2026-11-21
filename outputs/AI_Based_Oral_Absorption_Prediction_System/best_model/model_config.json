@@ -1,0 +1,14 @@
+{
+  "project_name": "AI-Based Oral Absorption Prediction System",
+  "architecture": "shared_chemberta_encoder_three_binary_heads",
+  "checkpoint": "DeepChem/ChemBERTa-77M-MLM",
+  "endpoints": [
+    "HIA",
+    "HOB20",
+    "HOB50"
+  ],
+  "hidden_size": 384,
+  "dropout": 0.1,
+  "max_length": 256,
+  "decision_threshold": 0.5
+}

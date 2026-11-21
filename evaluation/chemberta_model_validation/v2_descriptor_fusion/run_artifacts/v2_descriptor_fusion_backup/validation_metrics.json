@@ -1,0 +1,89 @@
+{
+  "loss": 0.35172757506370544,
+  "endpoints": {
+    "HIA": {
+      "n_observed": 174,
+      "positive": 160,
+      "negative": 14,
+      "threshold": 0.5,
+      "tn": 4,
+      "fp": 10,
+      "fn": 25,
+      "tp": 135,
+      "accuracy": 0.7988505747126436,
+      "precision": 0.9310344827586207,
+      "recall_sensitivity": 0.84375,
+      "specificity": 0.2857142857142857,
+      "f1": 0.8852459016393442,
+      "balanced_accuracy": 0.5647321428571428,
+      "roc_auc": 0.5825892857142858,
+      "pr_auc_average_precision": 0.9334803761843713,
+      "confusion_matrix_labels_0_1": [
+        [
+          4,
+          10
+        ],
+        [
+          25,
+          135
+        ]
+      ]
+    },
+    "HOB20": {
+      "n_observed": 232,
+      "positive": 174,
+      "negative": 58,
+      "threshold": 0.5,
+      "tn": 21,
+      "fp": 37,
+      "fn": 36,
+      "tp": 138,
+      "accuracy": 0.6853448275862069,
+      "precision": 0.7885714285714286,
+      "recall_sensitivity": 0.7931034482758621,
+      "specificity": 0.3620689655172414,
+      "f1": 0.7908309455587392,
+      "balanced_accuracy": 0.5775862068965517,
+      "roc_auc": 0.6162306777645661,
+      "pr_auc_average_precision": 0.7912428359941874,
+      "confusion_matrix_labels_0_1": [
+        [
+          21,
+          37
+        ],
+        [
+          36,
+          138
+        ]
+      ]
+    },
+    "HOB50": {
+      "n_observed": 236,
+      "positive": 126,
+      "negative": 110,
+      "threshold": 0.5,
+      "tn": 54,
+      "fp": 56,
+      "fn": 30,
+      "tp": 96,
+      "accuracy": 0.635593220338983,
+      "precision": 0.631578947368421,
+      "recall_sensitivity": 0.7619047619047619,
+      "specificity": 0.4909090909090909,
+      "f1": 0.6906474820143885,
+      "balanced_accuracy": 0.6264069264069264,
+      "roc_auc": 0.6798340548340547,
+      "pr_auc_average_precision": 0.6897578376960906,
+      "confusion_matrix_labels_0_1": [
+        [
+          54,
+          56
+        ],
+        [
+          30,
+          96
+        ]
+      ]
+    }
+  }
+}
